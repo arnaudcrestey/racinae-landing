@@ -32,9 +32,9 @@
         <p class="kicker">Application web</p>
         <h1>Transmettez la lumière de votre histoire familiale.</h1>
         <p class="sub">Déposez vos souvenirs, créez des albums, laissez des capsules pour vos proches. Chaque mémoire est protégée et vous appartient.</p>
-        <div class="cta-row" id="cta">
+        <div class="cta-row">
           <a class="btn primary" target="_blank"
-             href="https://mail.google.com/mail/?view=cm&fs=1&to=arnaud.crestey14@gmail.com&su=Demande%20d%27acc%C3%A8s%20gratuit%20%C3%A0%20Racinae&body=Bonjour,%0D%0A%0D%0AJe%20souhaite%20tester%20gratuitement%20Racinae.%0D%0AMerci%20de%20m'indiquer%20la%20marche%20%C3%A0%20suivre.%0D%0A%0D%0ABien%20%C3%A0%20vous.">
+             href="mailto:arnaud.crestey14@gmail.com?subject=Demande accès Racinae&body=Bonjour,%0D%0AJe souhaite tester Racinae gratuitement.">
             Essayer gratuitement
           </a>
         </div>
@@ -53,7 +53,6 @@
   <section id="features" class="section">
     <div class="container">
       <h2>Pourquoi Racinae&nbsp;?</h2>
-
       <div class="grid features-grid">
         <article class="card"><div class="icon">🌱</div><h3>Créer</h3><p>Écrivez vos souvenirs, enregistrez votre voix ou vos photos. Chaque mémoire devient une racine vivante.</p></article>
         <article class="card"><div class="icon">📖</div><h3>Organiser</h3><p>Albums thématiques, journal de bord, capsules. Tout est simple, élégant et sécurisé.</p></article>
@@ -69,12 +68,12 @@
     <div class="container">
       <h2>Captures d’écran</h2>
       <div class="screens-grid">
-        <figure><img src="assets/home.png" alt="Accueil Racinae" loading="lazy"/><figcaption>Accueil</figcaption></figure>
-        <figure><img src="assets/albums.png" alt="Albums Racinae" loading="lazy"/><figcaption>Albums</figcaption></figure>
-        <figure><img src="assets/journal.png" alt="Journal de bord" loading="lazy"/><figcaption>Journal</figcaption></figure>
-        <figure><img src="assets/transmission.png" alt="Transmission" loading="lazy"/><figcaption>Transmission</figcaption></figure>
-        <figure><img src="assets/famille.png" alt="Salon de famille" loading="lazy"/><figcaption>Famille</figcaption></figure>
-        <figure><img src="assets/dashboard.png" alt="Tableau de bord" loading="lazy"/><figcaption>Dashboard</figcaption></figure>
+        <figure><img src="assets/home.png" alt="Accueil Racinae" /><figcaption>Accueil</figcaption></figure>
+        <figure><img src="assets/albums.png" alt="Albums Racinae" /><figcaption>Albums</figcaption></figure>
+        <figure><img src="assets/journal.png" alt="Journal de bord" /><figcaption>Journal</figcaption></figure>
+        <figure><img src="assets/transmission.png" alt="Transmission" /><figcaption>Transmission</figcaption></figure>
+        <figure><img src="assets/famille.png" alt="Salon de famille" /><figcaption>Famille</figcaption></figure>
+        <figure><img src="assets/dashboard.png" alt="Tableau de bord" /><figcaption>Dashboard</figcaption></figure>
       </div>
     </div>
   </section>
@@ -89,12 +88,9 @@
         <li>Contrôle total de vos préférences</li>
         <li>Suppression définitive possible à tout moment</li>
       </ul>
-      <p class="muted" style="text-align: center; margin: 50px 0 30px;">
+      <p class="muted" style="text-align: center; margin: 40px 0;">
         Une question ? Contactez-moi : 
-        <a class="mail-link" target="_blank"
-           href="https://mail.google.com/mail/?view=cm&fs=1&to=arnaud.crestey14@gmail.com&su=Question%20sur%20Racinae">
-          arnaud.crestey14@gmail.com
-        </a>
+        <a class="mail-link" href="mailto:arnaud.crestey14@gmail.com">arnaud.crestey14@gmail.com</a>
       </p>
     </div>
   </section>
@@ -109,9 +105,7 @@
     document.getElementById('year').textContent = new Date().getFullYear();
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
+    toggle.addEventListener('click', () => nav.classList.toggle('open'));
   </script>
 </body>
 </html>
