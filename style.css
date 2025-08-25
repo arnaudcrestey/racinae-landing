@@ -100,15 +100,46 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
 #privacy {
   background: #1E2749; /* bleu foncé */
   color: #fff;
+  text-align: center;
 }
-#privacy h2 { color: #fff; }
-#privacy .check li { color: #fff; }
-#privacy .check li::before { color: var(--ok); }
+
+#privacy h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#privacy .check {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 40px;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: left;
+}
+
+#privacy .check li {
+  color: #fff;               /* texte blanc */
+  font-size: 16px;
+  position: relative;
+  padding-left: 28px;        /* espace pour la coche */
+}
+
+#privacy .check li::before {
+  content: "✓";              /* coche verte */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--ok);
+  font-weight: bold;
+}
+
 #privacy .mail-link {
   color: var(--accent);
   font-weight: 600;
   text-decoration: underline;
 }
+
 
 /* CHECKLIST */
 .check { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; list-style: none; }
@@ -141,3 +172,4 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
   .nav.open { display: block; }
   .nav a { display: block; padding: 10px 0; }
 }
+
