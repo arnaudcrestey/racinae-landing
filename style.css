@@ -96,10 +96,23 @@ h1, h2, h3 { font-family: 'Playfair Display', serif; }
   background: #f9fafb; border-top: 1px solid #e5e7eb; color: var(--text);
 }
 
+/* PRIVACY */
+#privacy {
+  background: #1E2749; /* bleu foncé */
+  color: #fff;
+}
+#privacy h2 { color: #fff; }
+#privacy .check li { color: #fff; }
+#privacy .check li::before { color: var(--ok); }
+#privacy .mail-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* CHECKLIST */
 .check { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; list-style: none; }
 .check li { padding-left: 26px; position: relative; }
-.check li::before { content: "✓"; position: absolute; left: 0; color: var(--ok); }
 
 /* FOOTER */
 .site-footer { background: rgba(30,39,73,.95); color: #fff; padding: 28px 0 12px; text-align: center; }
